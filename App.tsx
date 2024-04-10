@@ -18,7 +18,8 @@ function App(): React.JSX.Element {
           component={Login} 
           options={{ headerShown: false }} // Hide header on this screen
         />
-        <Stack.Screen name='Register' component={Register} />
+        <Stack.Screen name='Register' component={Register}
+        options={{headerShown:false}} />
         <Stack.Screen 
           name='Home' 
           component={Home} 
