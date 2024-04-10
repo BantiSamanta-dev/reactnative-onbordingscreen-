@@ -79,6 +79,7 @@ const RegisterScreen = (props) => {
           style={styles.button}
           onPress={() => props.navigation.navigate('LoginScreen')}>
           <Text style={styles.buttonText}>Login Now</Text>
+          
         </TouchableOpacity>
       </View>
     );
@@ -132,6 +133,12 @@ const RegisterScreen = (props) => {
           onPress={handleSubmitButton}
           disabled={loading}>
           <Text style={styles.buttonText}>{loading ? 'Loading...' : 'REGISTER'}</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => props.navigation.navigate('LoginScreen')}>
+          <Text style={styles.buttonText}>Login Now</Text>
+          
         </TouchableOpacity>
       </KeyboardAvoidingView>
     </ScrollView>

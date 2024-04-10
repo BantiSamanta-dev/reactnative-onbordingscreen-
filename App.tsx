@@ -6,6 +6,8 @@ import Home from './screens/Home';
 import Register from './screens/Register';
 import Login from './screens/Login';
 import Onbroding from './screens/Onbroding';
+import LiveScreen from './screens/Live';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -23,9 +25,10 @@ function App(): React.JSX.Element {
         <Stack.Screen 
           name='Home' 
           component={Home} 
-          options={{ headerShown: true }} // Show header on this screen
+          options={{ headerShown: false }} // Show header on this screen
         />
         <Stack.Screen name='Onboarding' component={Onbroding} options={{headerShown: false}}/>
+        <Stack.Screen name='live' component={LiveScreen} options={{headerShown: false}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
